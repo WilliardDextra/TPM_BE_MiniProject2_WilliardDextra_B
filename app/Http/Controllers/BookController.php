@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\MyEmail;
 
 class BookController extends Controller
 {
@@ -40,6 +42,14 @@ class BookController extends Controller
             'image' => $fileName,
             'category_id' => $request->category_name
         ]);
+
+        Mail::to('user@gmail.com')->send(new MyEmail([
+            'name' => $request->name,
+            'description' => $request->description,
+            'main_ingredients' => $request->main_ingredients,
+            'time_added' => $request->time_added,
+            'cooking_duration' => $request->cooking_duration,
+        ]));
 
         return redirect(route('welcome'));
     }
