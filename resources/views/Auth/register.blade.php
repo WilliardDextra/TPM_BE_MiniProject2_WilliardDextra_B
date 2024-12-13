@@ -11,8 +11,8 @@
         }
 
         body {
-            background-color: #131313; /* Warna utama */
-            color: #bfc2e4; /* Warna sekunder */
+            background-color: #131313;
+            color: #bfc2e4;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,7 +31,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            color: #bfc2e4; /* Warna sekunder */
+            color: #bfc2e4;
         }
 
         .form-group {
@@ -51,8 +51,8 @@
             font-size: 14px;
             border: 1px solid #bfc2e4;
             border-radius: 4px;
-            background-color: #131313; /* Warna utama */
-            color: #bfc2e4; /* Warna sekunder */
+            background-color: #131313;
+            color: #bfc2e4;
         }
 
         input:focus {
