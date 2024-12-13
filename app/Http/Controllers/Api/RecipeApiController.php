@@ -48,7 +48,7 @@ class RecipeApiController extends Controller
         return response()->json([
             'success'=>true,
             'message'=>'Recipe has been update succesfully',
-            'new_employee_data'=>$bookToUpdate
+            'new_recipe_data'=>$bookToUpdate
             ], 200);
     }
     public function delete($id){
